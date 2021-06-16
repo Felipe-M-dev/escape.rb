@@ -6,7 +6,7 @@
 
 g = ARGV[0].to_f
 r = ARGV[1].to_i * 1000
-puts "Gravedad: #{g} KM"
-puts "Radio: #{r} M"
+puts "g = #{g} Mts/s2"
+puts "r = #{r/1000} Km"
 escape = Math.sqrt(2 * g * r)
-puts "El resultado es: #{escape.round(2)} Mts/s"
+puts "Respuesta: #{escape.round(2)} Mts/s aproximadamente."
